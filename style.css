@@ -1,0 +1,53 @@
+body {
+    background-color: #fafafa;    
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.card-product {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
+
+.card-product .card-overlay {
+    background-color: #16a085;
+    position: absolute;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: all ease-in-out .5s;
+    border-radius: 5px 0 0 5px;
+}
+
+.card-product .card-content {
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+}
+
+.card-product:hover .card-overlay {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-product .card-content .fas {
+    color: #fff;
+}
+
+.card-product .card-content .card-title {
+    margin-left: 20px;
+    font-weight: 600;
+    transition: all ease-in-out .5s;
+}
+
+.card-product:hover .card-content .card-title {
+    color: #fff;
+}
